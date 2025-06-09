@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="om"></h1>
+    <h2 id="oprakash"></h2>
+    <input type="text" id="tt" placeholder="username" />
+    <input type="password" id="to" placeholder="password" />
+    <button onclick="kfc()">login</button>
+  </body>
+  <script>
+    let om = document.getElementById("om");
+    let oprakash = document.getElementById("oprakash");
+    let name = document.getElementById("tt");
+    let names = document.getElementById("to");
+    function kfc() {
+      om.innerText = name.value;
+      oprakash.innerText = names.value;
+
+    }
+  </script>
+</html>

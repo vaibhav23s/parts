@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+</head>
+<body>
+  <!-- login -->
+  <h1 id="message"></h1>
+  <input type="text" id="user" placeholder="Enter username" />
+  <input type="password" id="pass" placeholder="Enter password" />
+  <button onclick="login()">Login</button>
+  <!-- login -->
+
+  <script>
+    // Correct credentials using let
+    let correctUser = "amol";
+    let correctPass = "420";
+
+    function login() {
+      let enteredUser = document.getElementById("user").value;
+      let enteredPass = document.getElementById("pass").value;
+      let message = document.getElementById("message");
+
+      // Check empty
+      if (enteredUser === "" || enteredPass === "") {
+        alert("Please enter both username and password!");
+        message.innerText = "";
+        return;
+      }
+
+      // Validate credentials
+      if (enteredUser === correctUser && enteredPass === correctPass) {
+        message.style.color = "green";
+        message.innerText = "Login Successful ✅";
+      } else {
+        message.style.color = "red";
+        message.innerText = "Invalid username or password ❌";
+      }
+    }
+  </script>
+</body>
+</html>
