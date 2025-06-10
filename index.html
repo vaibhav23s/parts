@@ -4,23 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1 id="om"></h1>
-    <h2 id="oprakash"></h2>
-    <input type="text" id="tt" placeholder="username" />
-    <input type="password" id="to" placeholder="password" />
-    <button onclick="kfc()">login</button>
-  </body>
-  <script>
-    let om = document.getElementById("om");
-    let oprakash = document.getElementById("oprakash");
-    let name = document.getElementById("tt");
-    let names = document.getElementById("to");
-    function kfc() {
-      om.innerText = name.value;
-      oprakash.innerText = names.value;
 
-    }
-  </script>
+  <body>
+    <div class="ind">
+        <!-- up start from heare -->
+      <div class="up">
+        <img
+          src="https://t3.ftcdn.net/jpg/01/97/48/60/240_F_197486083_sfHKAw5WShplxYyeBrlCQ4H2FXnEdTZL.jpg"
+          alt=""
+        />
+      </div>
+      <!-- up end heare -->
+
+      <!-- behar started from heare -->
+      <div class="bihar">
+        <h1>WELCOME</h1>
+        <p>Login With Email</p>
+        <div class="lakhnau">
+          <fieldset class="em">
+            <legend>Email id</legend>
+            <input
+              type="email"
+              name=""
+              id="emails"
+              placeholder="enter your email"
+            />
+          </fieldset>
+          <br />
+
+          <fieldset class="em">
+            <legend>Password</legend>
+            <input
+              type="password"
+              name=""
+              id="password"
+              placeholder="enter your password"
+            />
+          </fieldset>
+
+          <p class="fro"><a href="#">Forget Password ?</a></p>
+          <input type="button" onclick="login()" value="Login" class="sub" />
+        </div>
+        <img src="retaj.png" alt="" class="taj">
+        <img src="wor-removebg-preview.png" alt="" class="wor">
+      </div>
+      <!-- bihar end from heare -->
+    </div>
+  </body>
+  <script src="./script.js"></script>
 </html>
